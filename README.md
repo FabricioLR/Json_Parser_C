@@ -45,10 +45,10 @@ Saída esperada
 $cd examples && make exec
 JSON: {
 	Image (OBJECT)
-        Width (OBJECT)
+        	Width (OBJECT)
 			800 (PRIMITIVE)
-        Height (OBJECT)
-            600 (PRIMITIVE)
+        	Height (OBJECT)
+           		 600 (PRIMITIVE)
 }
 Width: 800, Height: 600
 ```
