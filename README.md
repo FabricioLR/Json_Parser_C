@@ -18,23 +18,25 @@ Apenas copie o arquivo ![json.h](https://github.com/FabricioLR/Json_Parser_C/blo
 #include "json.h"
 
 int main(int argc, char **argv){
-    char *json_string = "{" \
+     char *json_string = "{" \
                             "\"Image\":{" \
                                 "\"Width\":800," \
                                 "\"Height\":600" \
                             "}"
                         "}";
 
-	JSON *json = json_parse(json_string);
+     JSON *json = json_parse(json_string);
 
-    print_json(json);
+     print_json(json);
 
-	JSON *image = json_get_item(json, "Image");
+     JSON *image = json_get_item(json, "Image");
 
-    JSON *width = json_get_item(image, "Width");
-    JSON *heigth = json_get_item(image, "Width");
+     JSON *width = json_get_item(image, "Width");
+     JSON *heigth = json_get_item(image, "Width");
 
-    printf("Width: %s, Height: %s\n", json_get_value(width), json_get_value(height));
+     printf("Width: %s, Height: %s\n", json_get_value(width), json_get_value(height));
+     ...
+}
 ```
 
 Saída esperada
